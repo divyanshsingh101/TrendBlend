@@ -1,0 +1,64 @@
+.middle{
+    
+    margin-left: 210px ;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+    position: absolute;
+    gap: 40px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.icons {
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 2px;
+    height: 40vh;
+    border-radius: 35px;
+  
+}
+.icons{
+    opacity: 1;
+  
+  
+  
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+  .category:hover .icons{
+    opacity: 0.5;
+    rotate : 3deg;
+  }
+  .category:hover .image{
+    opacity: 1;
+  }
+
+.category p{
+    font-size: 50px;
+    height: 20vh;
+    padding: 0px;
+    margin-top: 0px;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    font-size: xx-large;
+    height: 5vh;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-decoration: wavy;
+    
+    z-index: 10;
+   
+   
+}
+
+
+
+
+
