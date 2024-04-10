@@ -1,5 +1,14 @@
 from django.shortcuts import render
 
 # Create your views here.
-def index(request):
-  return HttpResponse("Welcome To Our Site")
+def home(request):
+  return render(request,'core/home.html')
+
+def cart(request):
+  return render(request,'core/cart.html')
+ 
+def trends(request):
+  return render(request,'core/trends.html')
+
+def shipment(request):
+  return render(request,'core/shipment.html')

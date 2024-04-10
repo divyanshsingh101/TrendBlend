@@ -1,11 +1,12 @@
+ { % load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="{ % static 'core/navbar.css'%}">
+    <link rel="stylesheet" href="{% static 'core/home.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -31,17 +32,17 @@
                 <div class="header">
                 <h1>TrendBlend</h1></div>
                 <div class="category men">
-                    <img class="icons"src="men's.jpg" alt="men category">
+                    <img class="icons"src="{ % static ' img/men's.jpg'%}" alt="men category">
                     <p>Men's wear</p>
 
                 </div>
                 <div class="category women">
-                <img class="icons"src="women.jpg" alt="Women category">
+                <img class="icons"src="{% static 'img/women.jpg'%}" alt="Women category">
                 <p> Women's wear</p></div>
 
             
             <div class="category children">
-                <img class="icons"src="children.jpg" alt="children category">
+                <img class="icons"src="{% static 'img/children.jpg'%}" alt="children category">
                 <p> Children's wear</p></div>
 
             </div>
