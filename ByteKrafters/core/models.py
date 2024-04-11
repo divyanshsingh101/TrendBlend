@@ -186,3 +186,11 @@ class Address(models.Model):
 
 # Create your models here.
 
+class Blog(models.Model):
+  title=models.CharField(max_length=1000)
+  created_at=models.DateTimeField(auto_now_add=True)
+  description=models.CharField(max_length=550)
+
+  def __str__(self):
+    return self.title
+
