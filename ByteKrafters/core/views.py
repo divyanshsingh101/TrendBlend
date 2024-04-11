@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from .forms import SignupForm, LoginForm
+from django.views.generic import ListView,DetailView
+from core.models import Blog
 
 # Create your views here.
 def home(request):
@@ -47,3 +49,12 @@ def user_login(request):
 def user_logout(request):
   logout(request)
   return redirect('login')
+
+class BlogSearchView():
+  model=Blog
+  template_name='home.html'
+  context_object_name='posts'
+
+  def get_queryset(self):
+    query=self.request.GET.get('q')
+    return Blog.objects.filter(title__icontains=query).order_by('-created_at')
