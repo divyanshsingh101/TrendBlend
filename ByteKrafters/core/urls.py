@@ -13,5 +13,6 @@ urlpatterns=[
     path('shipment/',views.shipment,name='shipment'),
     path('login/',views.login,name='login'),
    #  path('index/',views.index,name="home"),
+     path('search-blogs/',views.BlogSearchView,name='search_blogs'),
     
 ]
