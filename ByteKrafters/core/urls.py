@@ -1,5 +1,8 @@
 from django.urls import path
 from core import views
+from django.urls import path
+from .views import BlogSearchView
+
 app_name="core"
 urlpatterns=[
     path('',views.index,name='home'),
@@ -17,7 +20,8 @@ urlpatterns=[
      path('reviews/',views.reviews,name='reviews'),
      path('Men/',views.men,name='men'),
      path('women/',views.men,name='women'),
-    
+     
+    path('search-blogs/', BlogSearchView.as_view(), name='search_blogs'),
     
     
 ]
