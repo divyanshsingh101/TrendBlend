@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-image: linear-gradient(to right top, #c5cdc0, #b4c5bb, #a4bcb8, #98b3b6, #90a8b3, #91abb6, #92aeba, #93b1bd, #9fc3c4, #b3d4c8, #cee3cc, #eef0d4);
+    background-repeat: no-repeat; */
+    
 }
 body{
-    background-image: url("bg-1.webp");
+    
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 100%;
     
     background-size: cover;
@@ -20,11 +23,7 @@ body{
     
     
 }
-/* #background{
-    z-index: -55;
-    width: 100%;
-    height: 80%;
-} */
+
 .first{
     margin-left: 0;
 }
@@ -136,3 +135,39 @@ text-decoration: none;
 color:black;
 
 }
+
+
+    .exit {
+        background: #74b4de;
+        background-image: -webkit-linear-gradient(top, #74b4de, #15557d);
+        background-image: -moz-linear-gradient(top, #74b4de, #15557d);
+        background-image: -ms-linear-gradient(top, #74b4de, #15557d);
+        background-image: -o-linear-gradient(top, #74b4de, #15557d);
+        background-image: linear-gradient(to bottom, #74b4de, #15557d);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        text-shadow: 1px 1px 3px #632b63;
+        -webkit-box-shadow: 5px 1px 12px #4d3f4d;
+        -moz-box-shadow: 5px 1px 12px #4d3f4d;
+        box-shadow: 5px 1px 12px #4d3f4d;
+        font-family: Georgia;
+        color: #ffffff;
+        font-size: 20px;
+        border-color: #1f628d;
+        border-style: solid;
+        border-width: ;
+        padding: 17px 26px 18px 27px;
+        text-decoration: none;
+      }
+      
+      .exit:hover {
+        background: #d6e0e6;
+        background-image: -webkit-linear-gradient(top, #d6e0e6, #2b7fb8);
+        background-image: -moz-linear-gradient(top, #d6e0e6, #2b7fb8);
+        background-image: -ms-linear-gradient(top, #d6e0e6, #2b7fb8);
+        background-image: -o-linear-gradient(top, #d6e0e6, #2b7fb8);
+        background-image: linear-gradient(to bottom, #d6e0e6, #2b7fb8);
+        text-decoration: none;
+      }
+
