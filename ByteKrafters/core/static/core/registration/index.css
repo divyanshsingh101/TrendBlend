@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container img{
+    height: 70vh;
+    margin-top: 7%;
+    margin-left: 35%;
+    z-index: -777;
+}
+
+.container{
+    height: 100%;
+    background-color: rgb(56, 51, 51);
+}
+.container p{
+    margin-left: 38%;
+    color: aliceblue;
+    font-size: x-large;
+    margin-bottom: 3%;
+    margin-top: -9%;
+}
+.container button{
+    text-decoration: none;
+    margin-left: 30%;
+    margin-bottom: 3%;
+    height: 7vh;
+    width: 40rem;
+    margin-top: -15%;
+    padding: 18px 10px 25px 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 35px;
+    padding-bottom:2rem ;
+   
+    
+}
+.container button a{
+    margin: bottom 2rem;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+.container button a:hover{
+    
+    font-size: 1.7rem;
+}
+
