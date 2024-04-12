@@ -21,6 +21,11 @@ def shipment(request):
 def reviews(request):
   return render(request,'core/review.html')
 
+def men(request):
+  return render(request,'core/Men.html')
+
+def women(request):
+  return render(request,'core/women.html')
 
 def index(request):
   return render(request,'core/registration/index.html')
