@@ -5,27 +5,26 @@
     
     <link rel="stylesheet" href="{% static 'core/home.css' %}">
     
-   <form action="{% url 'core:search_blogs' %}" method="get">
+   <div class="search-container"><form action="{% url 'core:search_blogs' %}" method="get">
                     {% csrf_token %}
                     <input type="text" name="q">
                     <button type="submit" >Search</button>
-                </form>
+                </form></div>
             <div class="middle">
                 <div class="header">
                 <h1>TrendBlend</h1></div>
                 <div class="category men">
-                    <img class="icons"src="{% static 'img/men.jpg'%}" alt="men category">
+                    <a href="/Men"><img class="icons"src="{% static 'img/men.jpg'%}"  alt="men category"></a>
                     <p>Men's wear</p>
 
                 </div>
                 <div class="category women">
-                <img class="icons"src="{% static 'img/women.jpg'%}" alt="Women category">
-                <p> Women's wear</p></div>
+                  <a href="/women"><img class="icons" src="{% static 'img/women.jpg'%}" alt="Women category"></a>
+                   <p> Women's wear</p>
+               </div>
 
             
-            <div class="category children">
-                <img class="icons"src="{% static 'img/kid.jpg'%}" alt="children category">
-                <p> Kid's wear</p></div>
+           
 
             </div>
  {% endblock content %}
@@ -34,3 +33,6 @@
 
    
     
+
+    
+   
