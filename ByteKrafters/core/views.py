@@ -58,7 +58,7 @@ def user_logout(request):
   logout(request)
   return redirect('/login')
 
-class BlogSearchView():
+class BlogSearchView(ListView):
   model=Blog
   template_name='home.html'
   context_object_name='posts'
@@ -66,3 +66,7 @@ class BlogSearchView():
   def get_queryset(self):
     query=self.request.GET.get('q')
     return Blog.objects.filter(title__icontains=query).order_by('-created_at')
+
+
+def search_view(request):
+  query=request.GET.get("q")
