@@ -14,5 +14,7 @@ urlpatterns=[
     path('login/',views.login,name='login'),
    #  path('index/',views.index,name="home"),
      path('search-blogs/',views.BlogSearchView,name='search_blogs'),
+     path('reviews/',views.reviews,name='reviews'),
+    
     
 ]
