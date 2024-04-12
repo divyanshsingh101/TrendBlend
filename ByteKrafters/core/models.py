@@ -41,9 +41,9 @@ class Category(models.Model):
       
       return mark_safe('<img src="%s" width="50" />'%(self.image.url))
    def __str__(self):
-      return self
-class Tags(models.Model):
-   pass
+      return self.title
+#class Tags(models.Model):
+   #pass
 class Vendor(models.Model):
    vid=ShortUUIDField(unique=True, length=10,max_length=20 , prefix="ven", alphabet="abcdefgh12345") 
    
@@ -82,7 +82,7 @@ class Product(models.Model):
    old_price=models.DecimalField(max_digits=999999999, decimal_places=2, default="2299")
 
    specifications=models.TextField(null=True,blank=True)
-   tags=models.ForeignKey(Tags, on_delete=models.SET_NULL, null=True)
+   #tags=models.ForeignKey(Tags, on_delete=models.SET_NULL, null=True)
 
    product_status=models.CharField(choices=STATUS,max_length=10, default="in_review")
 
