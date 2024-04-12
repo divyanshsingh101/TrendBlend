@@ -33,7 +33,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
    #'core.apps.CoreConfig',
-
+    'jazzmin',
+                                                   
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -140,3 +141,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL="/"
+
+
+JAZZMIN_SETTINGS={ 
+    'site_header':"Trend Blend",
+    'site_brand':"Trend Blend",
+    'site_logo':"core/static/img/logo_.png",
+    'site_copyright':"trendblend.com",
+    
+}
