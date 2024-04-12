@@ -5,7 +5,11 @@
     
     <link rel="stylesheet" href="{% static 'core/home.css' %}">
     
-
+   <form action="{% url 'core:search_blogs' %}" method="get">
+                    {% csrf_token %}
+                    <input type="text" name="q">
+                    <button type="submit" >Search</button>
+                </form>
             <div class="middle">
                 <div class="header">
                 <h1>TrendBlend</h1></div>
@@ -15,7 +19,7 @@
 
                 </div>
                 <div class="category women">
-                <img class="icons"src="{% static 'img/Model-Chic-Fashion.jpg'%}" alt="Women category">
+                <img class="icons"src="{% static 'img/women.jpg'%}" alt="Women category">
                 <p> Women's wear</p></div>
 
             
