@@ -19,14 +19,15 @@
                 <div class="user_text"><h2>{{username}}</h2>
                 <p>gunnagarwal@gmail.com</p></div>
             </div>
-            <ul class="dashboard">
+             <ul class="dashboard">
                 <li><i class="fa-solid fa-home"></i><p><a class="names" href="/home">HOME</a></p></li><hr>
                 <li><i class="fa-solid fa-arrow-trend-up"></i><p><a class="names" href="/trends">TRENDS</a></p></li><hr>
                 <li><i class="fa-solid fa-cart-shopping"></i><p><a class="names" href="/cart">CART</a></p></li><hr>
                 <li><i class="fa-solid fa-ship"></i><p><a class="names" href="/shipment">SHIPMENT <br>TRACKING</a></p></li><hr>
-                <li><br>LOGOUT</li>
+                <li><i class="fa-solid fa-right-from-bracket"></i><p><a class="names" href="/logout"><br>LOGOUT</a></p></li>
                
             </ul></nav></div>
-        {% block content %}{% endblock content %}</div>
+        {% block content %}{% endblock content %}
+ <a href="/reviews"><button class="exit">EXIT from site</button></a>   </div>
 </body> 
 </html>
