@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from .forms import SignupForm, LoginForm
 from django.views.generic import ListView,DetailView
 from core.models import Blog
+from django.shortcuts import redirect
 
 # Create your views here.
 def home(request):
