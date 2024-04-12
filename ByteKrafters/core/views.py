@@ -17,6 +17,8 @@ def trends(request):
 
 def shipment(request):
   return render(request,'core/shipment.html')
+def reviews(request):
+  return render(request,'core/review.html')
 
 
 def index(request):
@@ -27,7 +29,7 @@ def user_SignUp(request):
     form=SignupForm(request.POST)
     if form.is_valid():
       form.save()
-      return redirect('login')
+      return redirect('/login')
   else:
     form=SignupForm()
   return render(request,'core/registration/signup.html',context={'form': form})
@@ -41,14 +43,14 @@ def user_login(request):
       user=authenticate(request,username=username,password=password)
       if user:
         login(request,user)
-        return redirect('home')
+        return redirect('/home')
   else:
     form=LoginForm()
   return render(request,'core/registration/login.html',{'form':form})
 
 def user_logout(request):
   logout(request)
-  return redirect('login')
+  return redirect('/login')
 
 class BlogSearchView():
   model=Blog
