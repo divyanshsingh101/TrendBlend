@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+ {% load static %}
+ {% block content %}
+
+    
+    <link rel="stylesheet" href="{% static 'core/home.css' %}">
+    
+
+            <div class="middle">
+                <div class="header">
+                <h1>TrendBlend</h1></div>
+                <div class="category men">
+                    <img class="icons"src="{% static 'img/men.jpg'%}" alt="men category">
+                    <p>Men's wear</p>
+
+                </div>
+                <div class="category women">
+                <img class="icons"src="{% static 'img/Model-Chic-Fashion.jpg'%}" alt="Women category">
+                <p> Women's wear</p></div>
+
+            
+            <div class="category children">
+                <img class="icons"src="{% static 'img/kid.jpg'%}" alt="children category">
+                <p> Kid's wear</p></div>
+
+            </div>
+ {% endblock content %}
+            
+
+
+   
+    
