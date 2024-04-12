@@ -20,12 +20,16 @@ def shipment(request):
   return render(request,'core/shipment.html')
 def reviews(request):
   return render(request,'core/review.html')
-
-def men(request):
-  return render(request,'core/Men.html')
+  def men(request):
+  allmen=Product.objects.filter(title='MALE')
+  context={'men_category':allmen}
+  return render(request,'core/Men.html',context)
 
 def women(request):
-  return render(request,'core/women.html')
+  all_women=Product.objects.filter(title='WOMEN')
+  context_={'women_category':all_women}
+  return render(request,'core/women.html',context_)
+
 
 def index(request):
   return render(request,'core/registration/index.html')
