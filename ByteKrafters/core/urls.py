@@ -15,6 +15,9 @@ urlpatterns=[
    #  path('index/',views.index,name="home"),
      path('search-blogs/',views.BlogSearchView,name='search_blogs'),
      path('reviews/',views.reviews,name='reviews'),
+     path('Men/',views.men,name='men'),
+     path('women/',views.men,name='women'),
+    
     
     
 ]
